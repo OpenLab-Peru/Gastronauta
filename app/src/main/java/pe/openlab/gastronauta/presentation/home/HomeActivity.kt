@@ -9,6 +9,12 @@ import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
 import pe.openlab.gastronauta.R
 
+/**
+ * HomeActivity
+ *
+ * @author Bryam Soto - bsoto.dev@gmail.com
+ * @since 15/10/2020
+ */
 class HomeActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {

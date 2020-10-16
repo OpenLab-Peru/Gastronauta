@@ -10,6 +10,12 @@ import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import pe.openlab.gastronauta.R
 
+/**
+ * FavoriteFragment
+ *
+ * @author Bryam Soto - bsoto.dev@gmail.com
+ * @since 15/10/2020
+ */
 class FavoriteFragment : Fragment() {
 
     private lateinit var favoriteViewModel: FavoriteViewModel

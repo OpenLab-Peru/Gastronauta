@@ -10,6 +10,12 @@ import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import pe.openlab.gastronauta.R
 
+/**
+ * DiscoverFragment
+ *
+ * @author Bryam Soto - bsoto.dev@gmail.com
+ * @since 15/10/2020
+ */
 class DiscoverFragment : Fragment() {
 
     private lateinit var discoverViewModel: DiscoverViewModel

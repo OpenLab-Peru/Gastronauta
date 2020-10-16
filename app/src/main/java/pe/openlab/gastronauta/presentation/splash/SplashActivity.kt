@@ -7,6 +7,12 @@ import pe.openlab.gastronauta.R
 import pe.openlab.gastronauta.presentation.home.HomeActivity
 import kotlin.concurrent.thread
 
+/**
+ * SplashActivity
+ *
+ * @author Bryam Soto - bsoto.dev@gmail.com
+ * @since 15/10/2020
+ */
 class SplashActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
