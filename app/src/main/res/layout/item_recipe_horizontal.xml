@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="140dp"
+    android:layout_marginBottom="16dp"
+    android:layout_marginEnd="16dp"
+    android:layout_marginStart="16dp"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="8dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/recipe_photo_iv"
+            android:layout_width="140dp"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="8dp"
+            android:src="@color/purple"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/recipe_name_tv"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/search_recipe_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:background="@drawable/favorite_point_shape"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:text="4.5"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@id/recipe_photo_iv"
+            app:layout_constraintEnd_toEndOf="@id/recipe_photo_iv" />
+
+        <TextView
+            android:id="@+id/recipe_name_tv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:maxLines="3"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:ellipsize="end"
+            app:layout_constraintBottom_toTopOf="@id/recipe_group_tv"
+            app:layout_constraintEnd_toStartOf="@id/favorite_btn"
+            app:layout_constraintStart_toEndOf="@id/recipe_photo_iv"
+            app:layout_constraintTop_toTopOf="parent"
+            android:text="Pollito bien frito con sus papotaspapotaspapotaspapotaspapotas" />
+
+        <ImageView
+            android:id="@+id/favorite_btn"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:src="@drawable/ic_favorite"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/recipe_name_tv"
+            app:layout_constraintTop_toTopOf="@id/recipe_name_tv" />
+
+        <TextView
+            android:id="@+id/recipe_group_tv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:maxLines="1"
+            android:textColor="@color/blue_700"
+            android:textSize="12sp"
+            android:textStyle="italic"
+            android:ellipsize="end"
+            app:layout_constraintBottom_toTopOf="@id/recipe_time_iv"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@id/recipe_name_tv"
+            app:layout_constraintTop_toBottomOf="@id/recipe_name_tv"
+            android:text="Pollos y parrillas" />
+
+        <ImageView
+            android:id="@+id/recipe_time_iv"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginBottom="8dp"
+            android:src="@drawable/ic_time"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/recipe_time_tv"
+            app:layout_constraintStart_toStartOf="@id/recipe_group_tv"
+            app:layout_constraintTop_toBottomOf="@id/recipe_group_tv" />
+
+        <TextView
+            android:id="@+id/recipe_time_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="16dp"
+            android:maxLines="1"
+            android:textColor="#000000"
+            android:textSize="14sp"
+            android:ellipsize="end"
+            app:layout_constraintBottom_toBottomOf="@id/recipe_time_iv"
+            app:layout_constraintEnd_toStartOf="@id/recipe_author_iv"
+            app:layout_constraintStart_toEndOf="@id/recipe_time_iv"
+            app:layout_constraintTop_toTopOf="@id/recipe_time_iv"
+            android:text="40 min" />
+
+        <ImageView
+            android:id="@+id/recipe_author_iv"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/ic_user"
+            app:layout_constraintBottom_toBottomOf="@id/recipe_time_tv"
+            app:layout_constraintEnd_toStartOf="@id/recipe_author_tv"
+            app:layout_constraintStart_toEndOf="@+id/recipe_time_tv"
+            app:layout_constraintTop_toTopOf="@id/recipe_time_tv" />
+
+        <TextView
+            android:id="@+id/recipe_author_tv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:maxLines="1"
+            android:textColor="#000000"
+            android:textSize="14sp"
+            android:ellipsize="end"
+            app:layout_constraintBottom_toBottomOf="@id/recipe_author_iv"
+            app:layout_constraintEnd_toEndOf="@id/recipe_group_tv"
+            app:layout_constraintStart_toEndOf="@id/recipe_author_iv"
+            app:layout_constraintTop_toTopOf="@id/recipe_author_iv"
+            android:text="Bryam Soto" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>
